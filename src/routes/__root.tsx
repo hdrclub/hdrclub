@@ -1,9 +1,9 @@
+import "../styles.css";
 import { Outlet, Link, createRootRoute, HeadContent, Scripts } from "@tanstack/react-router";
 import { Header } from "../components/Header";
 import { Footer } from "../components/Footer";
 import { WhatsAppButton } from "../components/WhatsAppButton";
 
-import appCss from "../styles.css?url";
 
 function NotFoundComponent() {
   return (
@@ -44,7 +44,6 @@ export const Route = createRootRoute({
       { name: "twitter:description", content: "Através do Método HDR, reconstruímos a identidade interna de empresárias que já prosperam para que a expansão deixe de ser sustentada por esforço." },
     ],
     links: [
-      { rel: "stylesheet", href: appCss },
       { rel: "icon", type: "image/png", href: "/favicon.png" },
     ],
   }),
